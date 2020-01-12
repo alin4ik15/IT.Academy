@@ -1,4 +1,4 @@
-public class Git {
+public class task17 {
     public static void main(String[] args) { int m [][] = new int[5][];
 
         m[0] = new int[]{1, 1, 1, 1, 1};
