@@ -1,4 +1,4 @@
-public class task20 {
+public class task21 {
 
         public static void main(String[] args) {
             String s = "How are you?";
