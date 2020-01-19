@@ -3,7 +3,6 @@ public class task19 {
     public static void main(String[] args) {
 
         String s = "How are you?";
-        //Начальное количество слов равно 0
         int count = 0;
 
 

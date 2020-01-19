@@ -67,7 +67,7 @@ public class ATM {
                     break;
             }
         } else {
-            System.out.println("Невозможно добавить купюру");
+            System.out.println("Unable to add bill");
         }
 
 
@@ -79,13 +79,13 @@ public class ATM {
             return false;
         } else {
             if (sum % 10 != 0) {
-                System.out.println("Невозможно получить данную сумму,купюры только 10 20 50");
+                System.out.println("It is impossible to receive this amount, banknotes only 10 20 50");
                 return false;
             } else {
                 int amountfift = sum / 50;
                 int amounttwent = (sum - amountfift * 50) / 20;
                 int amountten = (sum - amountfift * 50 - amounttwent * 20) / 10;
-                System.out.println("Кол-во 50:  " + amountfift + "  Кол-во 20:  " + amounttwent + "  Кол-во 10: " + amountten);
+                System.out.println("Quantity 50:  " + amountfift + "  Quantity 20:  " + amounttwent + "  Quantity 10: " + amountten);
             }
             return true;
         }
