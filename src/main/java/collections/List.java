@@ -1,13 +1,13 @@
-package Collect;
+package collections;
 
 import java.util.ArrayList;
 
 public class List {
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         int element = 10;
         int negative = 5;
-        ArrayList<Integer> mark= new ArrayList<Integer>();
+        ArrayList<Integer> mark = new ArrayList<Integer>();
         for (int i = 0; i < element; i++) {
             int a = (int) (Math.random() * 10 + 1);
             mark.add(a);

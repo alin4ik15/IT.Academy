@@ -1,9 +1,9 @@
-package Collect;
+package collections;
 
 import java.util.ArrayList;
-import java.util.Set;
 
 public class Map {
+
     public static void main(String[] args) {
         int element = 10;
         ArrayList<Integer> mark = new ArrayList<Integer>();

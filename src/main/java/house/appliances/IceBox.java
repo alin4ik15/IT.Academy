@@ -1,6 +1,8 @@
-package House;
+package house.appliances;
 
-class IceBox extends Appliances implements Include {
+import house.interfaces.Include;
+
+public class IceBox extends Appliances implements Include {
 
     public IceBox(String name) {
         super(name);
@@ -9,5 +11,4 @@ class IceBox extends Appliances implements Include {
     public void IncludeIn() {
         System.out.println(this + " plugged in");
     }
-
 }

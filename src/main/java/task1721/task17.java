@@ -1,5 +1,8 @@
+package task1721;
+
 public class task17 {
-    public static void main(String[] args) { int m [][] = new int[5][];
+    public static void main(String[] args) {
+        int[][] m = new int[5][];
 
         m[0] = new int[]{1, 1, 1, 1, 1};
         m[1] = new int[]{0, 1, 1, 1, 0};
@@ -7,9 +10,9 @@ public class task17 {
         m[3] = new int[]{0, 1, 1, 1, 0};
         m[4] = new int[]{1, 1, 1, 1, 1};
 
-        for (int i = 0; i < m.length; i++) {
-            for (int j = 0; j < m[i].length; j++) {
-                System.out.print(" " + m[i][j] + " ");
+        for (int[] ints : m) {
+            for (int anInt : ints) {
+                System.out.print(" " + anInt + " ");
             }
             System.out.println();
         }

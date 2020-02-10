@@ -1,15 +1,12 @@
-package Collect;
-
-import sun.plugin2.message.MarkTaintedMessage;
+package collections;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 
 public class Iter {
+
     public static void main(String[] args) {
         int element = 10;
-        ArrayList<Integer> mark = new ArrayList<Integer>();
+        ArrayList<Integer> mark = new ArrayList<>();
         for (int i = 0; i < element; i++) {
             int a = (int) (Math.random() * 10 + 1);
             mark.add(a);
@@ -17,15 +14,14 @@ public class Iter {
         System.out.println(mark);
         int max = mark.get(0);
         int x = 1;
-        Iterator<Integer> numbers = mark.iterator();
         while (x > 0) {
-            for (int i = 0; i < mark.size(); i++) {
-                if (max < mark.get(i)) {
-                    max = mark.get(i);
+            for (Integer integer : mark) {
+                if (max < integer) {
+                    max = integer;
                 }
             }
             x--;
-            System.out.println("Maximum value "+ max);
+            System.out.println("Maximum value " + max);
         }
     }
 }

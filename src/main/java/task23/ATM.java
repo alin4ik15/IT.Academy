@@ -20,39 +20,6 @@ public class ATM {
         this.twenties = twenties;
     }
 
-    public int getFifties() {
-        return fifties;
-    }
-
-    public int getTens() {
-        return tens;
-    }
-
-    public int getTwenties() {
-        return twenties;
-    }
-
-    public void setFifties(int fifties) {
-        this.fifties = fifties;
-    }
-
-    public void setTens(int tens) {
-        this.tens = tens;
-    }
-
-    public void setTwenties(int twenties) {
-        this.twenties = twenties;
-    }
-
-    @Override
-    public String toString() {
-        return "ATM{" +
-                "fifties=" + fifties +
-                ", tens=" + tens +
-                ", twenties=" + twenties +
-                '}';
-    }
-
     public void addMoney(String type, int amount) {
         if (getTwenties() + amount < twentiesAmount || getFifties() + amount < fiftiesAmount || getTens() + amount < tensAmount) {
             switch (type) {
@@ -89,5 +56,38 @@ public class ATM {
             }
             return true;
         }
+    }
+
+    public int getFifties() {
+        return fifties;
+    }
+
+    public int getTens() {
+        return tens;
+    }
+
+    public int getTwenties() {
+        return twenties;
+    }
+
+    public void setFifties(int fifties) {
+        this.fifties = fifties;
+    }
+
+    public void setTens(int tens) {
+        this.tens = tens;
+    }
+
+    public void setTwenties(int twenties) {
+        this.twenties = twenties;
+    }
+
+    @Override
+    public String toString() {
+        return "ATM{" +
+                "fifties=" + fifties +
+                ", tens=" + tens +
+                ", twenties=" + twenties +
+                '}';
     }
 }

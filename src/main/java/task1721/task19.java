@@ -1,3 +1,5 @@
+package task1721;
+
 public class task19 {
 
     public static void main(String[] args) {
@@ -5,6 +7,7 @@ public class task19 {
         String s = "How are you?";
         int count = 0;
 
+        //тут какая-то уерунда.
 
         if (s.length() != 0) {
             count++;
